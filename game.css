@@ -1,0 +1,333 @@
+body{
+    height: 100vh;
+    width: 100vh;
+    display: grid;
+    place-items: center;
+    margin:0;
+    counter-reset: score;
+}
+
+.phone{
+    position: relative;
+height: 600px;
+width: 300px;
+border-radius: 40px;
+border: black solid 4px;
+ background-color: #CCEFFF;
+box-shadow: 0 15px 19px black   ;
+}
+
+.layer-one{
+    position: absolute;
+    bottom: 0;
+    height: 460px;
+    width: 80px; 
+    right: 60px;
+    z-index: 1;
+    animation-name: gonzalo;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in ;
+}
+
+@keyframes gonzalo{ 
+    5%{bottom: 0;}
+
+    34%{ bottom: -80px;}
+
+    100%{bottom: 0;}
+}
+
+.layer-one img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+}
+
+.layer-one input[type=checkbox]{ 
+    position: absolute;
+    appearance: none;
+    cursor: pointer;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+
+}
+
+
+.layer-two{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    height: 460px;
+    width: 80px;
+    left: 60px;
+    animation-name: eduardo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.layer-two img{
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 190px;
+    object-fit:  cover;
+    
+}
+
+@keyframes eduardo{ 
+
+0%{
+    bottom: 0;
+}
+
+50% {
+    bottom:
+    -70px;
+}
+
+100%{bottom:0;}
+
+}
+
+.layer-two input[type=checkbox]{ 
+    position: absolute;
+    appearance: none;
+    cursor: pointer;
+    z-index: 2;
+    width: 100%;
+    height: 80px;
+
+}
+
+
+
+.layer-three{
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    height: 400px;
+    width: 240px;
+     
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.layer-three img{
+    width: 100%;
+    height: 100%;
+ 
+    border-radius: 20px;
+    top: 2px;
+    object-fit: cover;
+    
+}
+
+.layer-four{
+z-index: 4;
+    position: absolute;
+    height: 310px;
+    width: 80px;
+    left: 40px;
+    bottom: 0;
+    animation-name: antonio;
+    animation-duration: 1.4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+ 
+@keyframes antonio{
+    0%{
+        bottom:0;
+    }
+
+    75%{ 
+        bottom:
+            -80px
+ ;       
+    }
+
+    100%{
+        bottom:0;
+    }
+}
+
+.layer-four img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    height: 70px;
+    object-fit:cover;
+}
+
+
+.layer-four input[type=checkbox]{ 
+    position: absolute;
+    appearance: none;
+    cursor: pointer;
+    z-index: 4;
+    width: 100%;
+    height: 80px;
+
+}
+
+
+.layer-five {
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    height: 270px;
+    width: 210px;
+    ;
+    left: 0;
+}
+
+.layer-five img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius:40px ;
+}
+
+
+.layer-six{
+    z-index: 6;
+    position: absolute;
+    bottom: 0;
+    height: 210px;
+    width: 80px;
+    right: 30px;
+    animation-name: kevin;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    
+}
+.layer-six img{
+    width: 100%;
+     height: 70px;
+}
+
+@keyframes kevin{
+    0%{bottom: 0;}
+
+    25%{bottom: -70px;}
+
+    100%{bottom: 0;}
+}
+
+.layer-six input[type=checkbox]{ 
+    position: absolute;
+    appearance: none;
+    cursor: pointer;
+    z-index: 6;
+    width: 100%;
+    height: 80px;
+
+}
+
+.layer-seven{
+    z-index: 7;
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 150px;
+    right: 0; 
+}
+
+
+.layer-seven img{
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius:40px ;
+    object-fit: cover;
+}
+
+.layer-eight{
+    z-index: 8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 220px;
+    height: 95px;
+    background-color: chocolate;
+}
+
+.layer-eight img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.layer-nine{
+    z-index: 9;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px ;
+    height: 95px;
+    border-radius: 40px;
+    background-color: cornflowerblue;
+}
+
+
+.layer-nine img{
+    
+        border-bottom-right-radius:40px ;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+.layer-ten{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px ;
+    height: 95px;
+    background-color: cornflowerblue;
+    border-radius: 40px;
+}
+
+.layer-ten img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius:40px ;
+}
+
+input:checked{
+    counter-increment: score;
+}
+
+.score::after{
+    content: counter(score);
+}
+
+h2{
+    position: absolute;
+    top: 80px;
+    z-index: 500;
+    text-align: center;
+    color: rgb(68, 73, 102);
+    text-shadow: 10px 10px 10px black;
+}
+
+h3{
+    position: absolute;
+    top: 120px;
+text-align: center;
+    text-shadow: 10px 10px 10px black;
+}
